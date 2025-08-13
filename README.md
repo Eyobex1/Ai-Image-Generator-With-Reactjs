@@ -8,9 +8,7 @@ A simple React-based AI image generator using the OpenAI API (DALL·E), securely
 
 ## 🚀 Live Demo
 
-🔗 [Click here to see the live demo](https://your-netlify-site.netlify.app)
-
-> Replace the link above with your Netlify live deployment URL.
+🔗 [Click here to see the live demo](https://eyob-ai-image-generator.netlify.app)
 
 ---
 

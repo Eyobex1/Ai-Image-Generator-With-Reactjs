@@ -6,12 +6,15 @@
   margin-top: 80px;
   margin-bottom: 20px;
   gap: 30px;
+  padding: 0 20px;
 }
 
 .header {
   font-size: 70px;
   font-weight: 500;
   padding-bottom: 30px;
+  text-align: center;
+  word-wrap: break-word;
 }
 
 .header span {
@@ -22,32 +25,39 @@
 .image-loading {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .image-loading img {
-  width: 512px;
+  width: 100%;
+  max-width: 512px;
 }
 
 .search-box {
   display: flex;
-  width: 1000px;
-  height: 95px;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 95px;
+  padding: 10px;
   justify-content: space-around;
   align-items: center;
   border-radius: 50px;
   background: #1f3540;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .search-input {
-  width: 600px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 600px;
   height: 50px;
   background: transparent;
   border: none;
   outline: none;
   font-size: 18px;
   color: white;
-  padding-left: 35px;
-  margin-right: 35px;
+  padding-left: 20px;
 }
 
 .search-input::placeholder {
@@ -58,12 +68,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 300px;
-  height: 85px;
-  font-size: 20px;
+  min-width: 200px;
+  max-width: 300px;
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
   border-radius: 50px;
   background: #de1b89;
   cursor: pointer;
+  padding: 0 20px;
 }
 
 .loading-bar {
@@ -78,7 +91,8 @@
 }
 
 .loading-bar-full {
-  width: 512px;
+  width: 100%;
+  max-width: 512px;
   height: 8px;
   background: #de1b89;
   transition: 15s;
@@ -86,4 +100,32 @@
 
 .display-none {
   display: none;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    font-size: 45px;
+  }
+
+  .generate-btn {
+    font-size: 16px;
+    height: 50px;
+  }
+
+  .search-box {
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 20px;
+  }
+
+  .search-input {
+    font-size: 16px;
+    padding-left: 15px;
+    margin-right: 0;
+  }
+
+  .loading-text {
+    text-align: center;
+  }
 }
